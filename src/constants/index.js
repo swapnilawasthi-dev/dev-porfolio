@@ -72,5 +72,11 @@ export const PROJECTS = [
 export const CONTACT = {
   address: "767 Fifth Avenue, New York, NY 10153 ",
   phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  email: "swapnilawasthi.dev@gmail.com",
+};
+
+export const NAVLINKS = {
+  github: "https://github.com/swapnilawasthi-dev",
+  linkedIn: "https://www.linkedin.com/in/swapnil-awasthi-710a5a168/",
+  x: "https://twitter.com/_swapnilawasthi",
 };
