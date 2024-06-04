@@ -39,8 +39,10 @@ const Experience = () => {
                 </span>
               </h6>
               <ul className="mb-4 text-neutral-400">
-                {experience.description.map((point) => (
-                  <li className=" mb-5">- {point}</li>
+                {experience.description.map((point, index) => (
+                  <li key={index} className=" mb-5">
+                    - {point}
+                  </li>
                 ))}
               </ul>
               {experience.technologies.map((tech, index) => (
