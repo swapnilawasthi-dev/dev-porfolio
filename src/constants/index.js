@@ -1,7 +1,5 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/project-1.png";
+import project2 from "../assets/projects/project-2.png";
 
 
 export const EXPERIENCES = [
@@ -19,7 +17,7 @@ export const EXPERIENCES = [
       `Developed and implemented user-engaging dashboards in React Native, delivering intuitive data visualization solutions that enhanced user interaction and facilitated data-driven decision-making`,
       `Innovatively designed an Order module with integrated product recommendation capabilities, resulting in a notable 15% increase in the total amount per order through strategic upselling and personalized user experiences`,
     ],
-    technologies: ["Angular", "SCSS", "Angular Material", "React Native", "Ionic"],
+    technologies: ["Angular", "SCSS", "Angular Material", "React Native", "Ionic", "Javascript", "Typescript"],
   },
   {
     year: "Aug 2023 - Sept 2023",
@@ -30,7 +28,7 @@ export const EXPERIENCES = [
       `Expertly crafted HTML emails with pre-2000 CSS, achieving responsive and visually appealing layouts without relying on CSS Grid or Flexbox`,
       `Automated email delivery utilizing AWS SES, streamlining communication processes`
     ],
-    technologies: ["React", "CSS", "HTML", "AWS SES"],
+    technologies: ["React", "CSS", "HTML", "AWS", "Javascript"],
   },
 ];
 
@@ -52,20 +50,17 @@ export const PROJECTS = [
     description:
       "Built an online editor for showcasing user-created HTML, CSS, and JavaScript code snippets. Utilized ReactJs, Firebase, and Tailwind.",
     technologies: ["ReactJs", "Firebase", "Tailwind"],
+    liveLink: "https://jseditor-bba2c.web.app",
+    githubLink: "https://github.com/swapnilawasthi-dev/JSeditor"
   },
   {
-    title: "Netflix Clone",
+    title: "Portfolio Website",
     image: project2,
     description:
-      "Developed a Netflix clone to play YouTube trailers using YouTube and movie trailer APIs. Utilized ReactJs, Firebase, Movie Trailer API, and YouTube API.",
-    technologies: ["ReactJs", "Firebase", "Movie Trailer API", "YouTube API"],
-  },
-  {
-    title: "Admin Dashboard",
-    image: project3,
-    description:
-      "Built a React Admin Dashboard with real-time data, charts, events, kanban, CRM, etc. Utilized React, Refine Tooling, and Ant Design.",
-    technologies: ["React", "Refine Tooling", "Ant Design"],
+      "Personal portfolio to display my areas of and showcase my understanding of UI-UX. Utilized ReactJs, Tailwind and Framer Motion.",
+    technologies: ["ReactJs", "Tailwind", "Framer Motion"],
+    liveLink: "https://jseditor-bba2c.web.app",
+    githubLink: "https://github.com/swapnilawasthi-dev/dev-porfolio"
   },
 ];
 

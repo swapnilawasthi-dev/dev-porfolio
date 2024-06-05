@@ -33,8 +33,8 @@ const Technologies = () => {
         Technologies
       </motion.h1>
       <motion.div
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}
         className="flex flex-wrap items-center justify-center gap-4"

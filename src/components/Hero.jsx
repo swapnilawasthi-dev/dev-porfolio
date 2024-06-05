@@ -4,9 +4,9 @@ import profilePic from "../assets/image.jpg";
 import Typewriter from "typewriter-effect";
 
 const container = (delay) => ({
-  hidden: { x: -100, opacity: 0 },
+  hidden: { y: 100, opacity: 0 },
   visible: {
-    x: 0,
+    y: 0,
     opacity: 1,
     transition: { duration: 0.5, delay: delay },
   },
@@ -14,7 +14,7 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className=" mt-20 border-b border-neutral-900 pb-4 lg:mmb-35">
+    <div className=" md:mt-20 max-[425px]:mt-10 border-b border-neutral-900 pb-4 lg:mmb-35">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
@@ -53,8 +53,8 @@ const Hero = () => {
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center">
             <motion.img
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
               src={profilePic}
               alt="Swapnil Awasthi"

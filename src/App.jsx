@@ -17,7 +17,7 @@ const App = () => {
       </div>
       <Social />
       <Email />
-      <div className="mx-auto px-8">
+      <div className="mx-auto px-8 max-md:px-4 ">
         <Navbar />
       </div>
       <div className="container mx-auto px-16">

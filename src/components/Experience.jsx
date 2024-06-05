@@ -17,18 +17,18 @@ const Experience = () => {
         {EXPERIENCES.map((experience, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              initial={{ opacity: 0, x: -100 }}
+              initial={{ opacity: 0, y: 100 }}
               transition={{ duration: 1 }}
               className="w-full lg:w-1/4"
             >
               <p className="mb-2 text-sm text-neutral-400">{experience.year}</p>
             </motion.div>
             <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              initial={{ opacity: 0, x: 100 }}
+              initial={{ opacity: 0, y: 100 }}
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
