@@ -17,7 +17,7 @@ export const EXPERIENCES = [
       `Developed and implemented user-engaging dashboards in React Native, delivering intuitive data visualization solutions that enhanced user interaction and facilitated data-driven decision-making`,
       `Innovatively designed an Order module with integrated product recommendation capabilities, resulting in a notable 15% increase in the total amount per order through strategic upselling and personalized user experiences`,
     ],
-    technologies: ["Angular", "SCSS", "Angular Material", "React Native", "Ionic", "Javascript", "Typescript"],
+    technologies: ["Angular", "SCSS", "Ionic" , "Angular Material", "React Native", "Javascript", "Typescript"],
   },
   {
     year: "Aug 2023 - Sept 2023",
@@ -41,7 +41,7 @@ export const NAVLINKS = {
 
 export const HERO_CONTENT = `Software Engineer with about a year of experience in Javascript and its frameworks, translating user stories and wireframes into high quality reusable code, delivering seamless and high-performance user experiences. Adept at consistently updating skills with emerging technologies while maintaining a strong foundation in data structures and algorithms.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile software engineer with a passion for creating efficient and user-friendly web applications. With 1 year of professional experience, I have worked with a variety of technologies, including React, Firebase, Angular, and Ant Design. My journey in software development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions.`;
+export const ABOUT_TEXT = `I am a dedicated and versatile software engineer with a passion for creating efficient and user-friendly web applications. With 1 year of professional experience, I have worked with a variety of technologies, including React, React Native, Ionic, Angular and Firebase. My journey in software development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. In addition to my professional pursuits, I am an avid traveler, finding joy in exploring new cultures and destinations. Traveling not only broadens my perspective but also fuels my creativity by exposing me to diverse experiences and environments. Alongside my adventures, I indulge in the world of literature, spending my free time immersed in books across various genres. Reading not only enriches my mind but also nurtures critical thinking and continuous personal growth.`;
 
 export const PROJECTS = [
   {

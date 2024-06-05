@@ -125,11 +125,11 @@ const Navbar = () => {
       </nav>
       {isDropdownOpen && (
         <div
-          className=" bg-neutral-950 opacity-55 absolute right-0 left-0 flex flex-col items-center"
+          className=" bg-slate-900 mt-1 z-10  absolute right-0 left-0 flex flex-col items-center"
           ref={dropdownRef}
         >
           <button
-            className=" text-2xl py-1"
+            className=" text-xl py-2 w-full font-mono rounded-lg border-t-2"
             onClick={() =>
               document
                 .getElementById("about")
@@ -139,7 +139,7 @@ const Navbar = () => {
             About
           </button>
           <button
-            className=" text-2xl py-1"
+            className=" text-xl py-2 w-full font-mono rounded-lg border-t-2"
             onClick={() =>
               document
                 .getElementById("technologies")
@@ -149,7 +149,7 @@ const Navbar = () => {
             Technologies
           </button>
           <button
-            className=" text-2xl py-1"
+            className=" text-xl py-2 w-full font-mono rounded-lg border-t-2"
             onClick={() =>
               document
                 .getElementById("experience")
@@ -159,7 +159,7 @@ const Navbar = () => {
             Experience
           </button>
           <button
-            className=" text-2xl py-1"
+            className=" text-xl py-2 w-full font-mono rounded-lg border-t-2"
             onClick={() =>
               document
                 .getElementById("projects")
@@ -171,7 +171,7 @@ const Navbar = () => {
           <a
             href={resumeFile}
             download="SwapnilAwasthi_Resume.pdf"
-            className=" text-2xl py-1"
+            className=" text-xl py-2 w-full font-mono text-center rounded-lg border-b-2 border-t-2"
           >
             Resume
           </a>
