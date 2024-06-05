@@ -124,7 +124,10 @@ const Navbar = () => {
         </motion.button>
       </nav>
       {isDropdownOpen && (
-        <div
+        <motion.div
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          transition={{ duration: 0.5 }}
           className=" bg-slate-900 mt-1 z-10  absolute right-0 left-0 flex flex-col items-center"
           ref={dropdownRef}
         >
@@ -175,7 +178,7 @@ const Navbar = () => {
           >
             Resume
           </a>
-        </div>
+        </motion.div>
       )}
     </>
   );
