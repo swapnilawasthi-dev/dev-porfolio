@@ -59,7 +59,7 @@ export const PROJECTS = [
     description:
       "Personal portfolio to display my areas of and showcase my understanding of UI-UX. Utilized ReactJs, Tailwind and Framer Motion.",
     technologies: ["ReactJs", "Tailwind", "Framer Motion"],
-    liveLink: "https://jseditor-bba2c.web.app",
+    liveLink: "https://swapnilawasthi-portfolio.vercel.app/",
     githubLink: "https://github.com/swapnilawasthi-dev/dev-porfolio"
   },
 ];

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import logo from "../assets/logo.svg";
 import { BiChevronUp, BiChevronDown } from "react-icons/bi";
 import { motion } from "framer-motion";
-import resumeFile from "../assets/SwapnilAwasthi_Resume.pdf";
+import resumeFile from "../assets/Resume_SwapnilAwasthi.pdf";
 
 const container = (delay) => ({
   hidden: { y: -100, opacity: 0 },
