@@ -1,5 +1,6 @@
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project3.png";
 
 
 export const EXPERIENCES = [
@@ -52,6 +53,15 @@ export const PROJECTS = [
     technologies: ["ReactJs", "Firebase", "Tailwind"],
     liveLink: "https://jseditor-bba2c.web.app",
     githubLink: "https://github.com/swapnilawasthi-dev/JSeditor"
+  },
+  {
+    title: "Trell Task Mangagemennt",
+    image: project3,
+    description:
+      "Built a task management system using the Pinia store in a Vue.js application. It manages boards, columns, and tasks, allowing users to select and modify tasks within boards.",
+    technologies: ["Vue 3", "Tailwind", "Pinia"],
+    liveLink: "https://trello-task-management-six.vercel.app/",
+    githubLink: "https://github.com/swapnilawasthi-dev/trello-task-management"
   },
   {
     title: "Portfolio Website",
