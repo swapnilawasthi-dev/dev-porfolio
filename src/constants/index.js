@@ -55,7 +55,7 @@ export const PROJECTS = [
     githubLink: "https://github.com/swapnilawasthi-dev/JSeditor"
   },
   {
-    title: "Trell Task Mangagemennt",
+    title: "Trello Task Mangagemennt",
     image: project3,
     description:
       "Built a task management system using the Pinia store in a Vue.js application. It manages boards, columns, and tasks, allowing users to select and modify tasks within boards.",
