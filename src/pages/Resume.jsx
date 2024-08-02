@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import resumeFile from "../assets/SwapnilAwasthi-Resume.pdf";
 import logoDark from "../assets/logo_dark.svg";
 import logoLight from "../assets/logo_light.svg";
@@ -98,6 +98,16 @@ const Resume = ({ isDarkMode, setIsDarkMode }) => {
       </nav>
       <div className="flex h-5/6 items-center min-[900px]:mx-20 max-[860px]:mx-10 max-[900px]:flex-col justify-center">
         <div className="w-2/5 p-4 items-center justify-center max-[768px]:w-full">
+          <button
+            onClick={() => window.history.back()}
+            className={`text-md py-2 px-4 font-mono text-center rounded-lg border-b-2 border-t-2 ${
+              isDarkMode
+                ? "text-neutral-700 border-neutral-700 hover:bg-slate-400"
+                : " hover:bg-[rgba(256,256,256,0.1)]"
+            }`}
+          >
+            Back
+          </button>
           {/* Profile Card */}
           <div>
             <div className="p-6 rounded-lg w-full shadow-lg">
@@ -139,7 +149,7 @@ const Resume = ({ isDarkMode, setIsDarkMode }) => {
             </div>
           </div>
         </div>
-        <div className="flex max-[768px]:w-full items-center justify-center px-10 py-10 shadow-lg">
+        <div className="flex max-[768px]:w-full max-w-xl items-center justify-center px-10 py-10 shadow-lg">
           <canvas
             ref={canvasRef}
             className=" max-[375px]:h-[300px] max-[500px]:h-[400px]  max-[768px]:h-[550px] max-[1024px]:h-[600px] max-[1440px]:h-[700px]"
