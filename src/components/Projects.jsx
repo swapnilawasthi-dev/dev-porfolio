@@ -163,14 +163,29 @@ const Projects = ({ isDarkMode }) => {
       </div>
       <div className=" min-[769px]:hidden">
         {PROJECTS.map((project, index) => (
-          <div key={index} className=" flex flex-wrap lg:justify-center">
+          <div key={index} className=" mb-6 flex flex-wrap lg:justify-center">
             <motion.div
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               initial={{ opacity: 0, y: 100 }}
               transition={{ duration: 0.5 }}
-              className=" mt-20 w-full max-w-md lg:w-1/2"
+              className="w-full max-w-md lg:w-1/2"
             >
+              <motion.div
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                initial={{ opacity: 0, y: 100 }}
+                transition={{ duration: 0.5 }}
+                className="w-full lg:w-1/2"
+              >
+                <img
+                  src={project.image}
+                  width={550}
+                  height={550}
+                  alt={project.title}
+                  className=" rounded"
+                />
+              </motion.div>
               <h6
                 className={`mb-2 font-semibold ${
                   isDarkMode ? " text-slate-800" : ""
@@ -215,21 +230,6 @@ const Projects = ({ isDarkMode }) => {
                   GitHub
                 </a>
               </div>
-            </motion.div>
-            <motion.div
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              initial={{ opacity: 0, y: 100 }}
-              transition={{ duration: 0.5 }}
-              className="w-full lg:w-1/2"
-            >
-              <img
-                src={project.image}
-                width={550}
-                height={550}
-                alt={project.title}
-                className="mb-6 rounded"
-              />
             </motion.div>
           </div>
         ))}
