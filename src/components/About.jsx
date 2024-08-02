@@ -2,10 +2,14 @@ import aboutImg from "../assets/IMG_4404.png";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
 
-const About = () => {
+const About = ({ isDarkMode }) => {
   return (
     <div id="about" className="border-b border-neutral-900 pb-4">
-      <h1 className="my-20 text-center text-4xl">
+      <h1
+        className={`my-20 text-center text-4xl ${
+          isDarkMode ? "text-neutral-900" : ""
+        }`}
+      >
         About
         <span className="text-neutral-500"> Me</span>
       </h1>
@@ -29,7 +33,13 @@ const About = () => {
           className="w-full lg:w-1/2"
         >
           <div className="flex justify-center lg:justify-start">
-            <p className="my-2 max-w-xl py-6">{ABOUT_TEXT}</p>
+            <p
+              className={`my-2 max-w-xl py-6 ${
+                isDarkMode ? "text-neutral-600 " : ""
+              }`}
+            >
+              {ABOUT_TEXT}
+            </p>
           </div>
         </motion.div>
       </div>

@@ -12,7 +12,7 @@ const container = (delay) => ({
   },
 });
 
-const Hero = () => {
+const Hero = ({ isDarkMode }) => {
   return (
     <div className=" md:mt-20 max-[425px]:mt-10 border-b border-neutral-900 pb-4 lg:mmb-35">
       <div className="flex flex-wrap">
@@ -22,7 +22,9 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className=" max-[375px]:text-3xl  max-md:text-5xl pb-16 text-6xl font-thin tracking-tight lg:mt-16 xl:text-8xl"
+              className={`max-[375px]:text-3xl  max-md:text-5xl pb-16 text-6xl font-thin tracking-tight lg:mt-16 xl:text-8xl ${
+                isDarkMode ? "text-neutral-800" : ""
+              }`}
             >
               Swapnil Awasthi
             </motion.h1>
@@ -30,7 +32,11 @@ const Hero = () => {
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text bg-clip-test text-3xl tracking-tight text-transparent"
+              className={`bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text bg-clip-test text-3xl tracking-tight text-transparent ${
+                isDarkMode
+                  ? "from-slate-400 via-neutral-400 to-neutral-900"
+                  : "from-pink-300 via-slate-500 to-purple-500"
+              }`}
             >
               <Typewriter
                 options={{
@@ -44,7 +50,9 @@ const Hero = () => {
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tighter"
+              className={`my-2 max-w-xl py-6 font-light tracking-tighter ${
+                isDarkMode ? "text-neutral-600" : ""
+              }`}
             >
               {HERO_CONTENT}
             </motion.p>
