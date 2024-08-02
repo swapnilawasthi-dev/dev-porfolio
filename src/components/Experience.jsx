@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Experience = ({ isDarkMode }) => {
   return (
-    <div id="experience" className="border-b border-neutral-900 pb-4">
+    <div id="experience" className="border-b border-zinc-700 pb-4">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -13,7 +13,7 @@ const Experience = ({ isDarkMode }) => {
           isDarkMode ? "text-neutral-800" : ""
         }`}
       >
-        Experience
+        Professional Experience
       </motion.h1>
       <div>
         {EXPERIENCES.map((experience, index) => (
@@ -40,23 +40,23 @@ const Experience = ({ isDarkMode }) => {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6
-                className={`mb-2 font-semibold ${
+              <div
+                className={`mb-2 font-semibold text-xl ${
                   isDarkMode ? "text-neutral-600" : ""
                 }`}
               >
                 {experience.role} -{" "}
                 <span
-                  className={`text-sm  ${
-                    isDarkMode ? "text-slate-600" : "text-purple-100"
+                  className={`text-purple-100 ${
+                    isDarkMode ? "text-slate-600" : ""
                   }`}
                 >
                   {experience.company}
                 </span>
-              </h6>
+              </div>
               <ul
-                className={`mb-4 ${
-                  isDarkMode ? "text-neutral-600" : "text-neutral-400 "
+                className={`mb-4 text-neutral-400 ${
+                  isDarkMode ? "text-neutral-600" : ""
                 }`}
               >
                 {experience.description.map((point, index) => (
@@ -65,11 +65,11 @@ const Experience = ({ isDarkMode }) => {
                   </li>
                 ))}
               </ul>
-              <div className="w-full max-w-xl lg:w-3/4">
+              <div className="w-full max-w-xl lg:w-3/4 flex flex-wrap">
                 {experience.technologies.map((tech, index) => (
                   <code
                     key={index}
-                    className={`mr-2 mt-4 mb-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium ${
+                    className={`mr-2 mt-4 mb-2 rounded  px-2 py-1 text-sm font-medium  ${
                       isDarkMode
                         ? " bg-neutral-300 text-slate-800"
                         : "bg-neutral-900 text-purple-800"

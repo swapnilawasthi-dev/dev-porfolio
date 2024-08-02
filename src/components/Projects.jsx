@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 const Projects = ({ isDarkMode }) => {
   return (
-    <div id="projects" className="border-b border-neutral-900 pb-4">
+    <div id="projects" className="border-b border-zinc-700 pb-4">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.5 }}
-        className={`my-20 text-center text-4xl ${
+        className={`mt-12 text-center text-4xl ${
           isDarkMode ? "text-neutral-800" : ""
         }`}
       >
@@ -19,7 +19,7 @@ const Projects = ({ isDarkMode }) => {
       <div className=" max-[768px]:hidden">
         {PROJECTS.map((project, index) =>
           index % 2 == 0 ? (
-            <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+            <div key={index} className=" flex flex-wrap lg:justify-center">
               <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -59,7 +59,7 @@ const Projects = ({ isDarkMode }) => {
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className={`mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium ${
+                    className={`mr-2 rounded  px-2 py-1 text-sm font-medium ${
                       isDarkMode
                         ? " bg-neutral-300 text-slate-800"
                         : "text-purple-900  bg-neutral-900"
@@ -89,7 +89,7 @@ const Projects = ({ isDarkMode }) => {
               </motion.div>
             </div>
           ) : (
-            <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+            <div key={index} className=" flex flex-wrap lg:justify-center">
               <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -114,7 +114,7 @@ const Projects = ({ isDarkMode }) => {
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className={`mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium ${
+                    className={`mr-2 rounded  px-2 py-1 text-sm font-medium  ${
                       isDarkMode
                         ? " bg-neutral-300 text-slate-800"
                         : "text-purple-900 bg-neutral-900"
@@ -163,29 +163,14 @@ const Projects = ({ isDarkMode }) => {
       </div>
       <div className=" min-[769px]:hidden">
         {PROJECTS.map((project, index) => (
-          <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+          <div key={index} className=" flex flex-wrap lg:justify-center">
             <motion.div
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               initial={{ opacity: 0, y: 100 }}
               transition={{ duration: 0.5 }}
-              className=" w-full max-w-md lg:w-1/2"
+              className=" mt-20 w-full max-w-md lg:w-1/2"
             >
-              <motion.div
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                initial={{ opacity: 0, y: 100 }}
-                transition={{ duration: 0.5 }}
-                className="w-full lg:w-1/2"
-              >
-                <img
-                  src={project.image}
-                  width={550}
-                  height={550}
-                  alt={project.title}
-                  className="rounded"
-                />
-              </motion.div>
               <h6
                 className={`mb-2 font-semibold ${
                   isDarkMode ? " text-slate-800" : ""
@@ -203,7 +188,7 @@ const Projects = ({ isDarkMode }) => {
               {project.technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className={`mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium ${
+                  className={`mr-2 rounded  px-2 py-1 text-sm font-medium  ${
                     isDarkMode
                       ? " bg-neutral-300 text-slate-800"
                       : "text-purple-900 bg-neutral-900"
@@ -230,6 +215,21 @@ const Projects = ({ isDarkMode }) => {
                   GitHub
                 </a>
               </div>
+            </motion.div>
+            <motion.div
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 100 }}
+              transition={{ duration: 0.5 }}
+              className="w-full lg:w-1/2"
+            >
+              <img
+                src={project.image}
+                width={550}
+                height={550}
+                alt={project.title}
+                className="mb-6 rounded"
+              />
             </motion.div>
           </div>
         ))}
