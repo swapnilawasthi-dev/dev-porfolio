@@ -22,7 +22,7 @@ const Hero = ({ isDarkMode }) => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className={`max-[375px]:text-3xl  max-md:text-5xl pb-16 text-6xl font-thin tracking-tight lg:mt-16 xl:text-8xl ${
+              className={`max-[375px]:text-3xl  max-md:text-4xl pb-16 text-6xl font-thin tracking-tight lg:mt-16 xl:text-8xl ${
                 isDarkMode ? "text-neutral-800" : ""
               }`}
             >
