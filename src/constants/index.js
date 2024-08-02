@@ -1,5 +1,5 @@
 import project1 from "../assets/projects/project-1.png";
-import project2 from "../assets/projects/project-2.png";
+import project2 from "../assets/projects/project2.png";
 import project3 from "../assets/projects/project3.png";
 
 
@@ -64,13 +64,13 @@ export const PROJECTS = [
     githubLink: "https://github.com/swapnilawasthi-dev/trello-task-management"
   },
   {
-    title: "Portfolio Website",
+    title: "The Rick and Morty Show",
     image: project2,
     description:
-      "Personal portfolio to display my areas of and showcase my understanding of UI-UX. Utilized ReactJs, Tailwind and Framer Motion.",
-    technologies: ["ReactJs", "Tailwind", "Framer Motion"],
-    liveLink: "https://swapnilawasthi-portfolio.vercel.app/",
-    githubLink: "https://github.com/swapnilawasthi-dev/dev-porfolio"
+      "A webapp to display characters, locations and episodes of cartoon Rick and Morty utilizing The Rick and Morty API.",
+    technologies: ["ReactJS", "CSS", "Material UI"],
+    liveLink: "http://therickandmorty-webapp.vercel.app/",
+    githubLink: "https://github.com/swapnilawasthi-dev/rickandmorty-webapp"
   },
 ];
 
