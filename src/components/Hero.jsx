@@ -26,7 +26,7 @@ const Hero = ({ isDarkMode }) => {
                 isDarkMode ? "text-neutral-800" : ""
               }`}
             >
-              Swapnil Awasthi
+              Swapnil Awasthi 
             </motion.h1>
             <motion.span
               variants={container(0.5)}
