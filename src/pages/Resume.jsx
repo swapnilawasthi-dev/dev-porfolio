@@ -130,7 +130,7 @@ const Resume = ({ isDarkMode, setIsDarkMode }) => {
                     : "text-gray-400 dark:text-gray-300"
                 }`}
               >
-                Software Engineer @Abacusdesk
+                Software Engineer @Joveo
               </div>
               {/* Download Resume Button */}
               <div className="text-center my-6">
