@@ -5,8 +5,19 @@ import project3 from "../assets/projects/project3.png";
 
 export const EXPERIENCES = [
   {
-    year: "Sept 2023 - Present",
-    role: "Software Engineer - Frontend",
+    year: "Nov 2024 - Present",
+    role: "Software Engineer Intern",
+    company: "Joveo",
+    description: [
+      `Collaborated with the platform team to design and implement an admin tool in React, enabling the internal team to efficiently assign permissions out of 688 available options, streamlining administrative tasks and improving workflow.`,
+      `Resolved more than 30 issues in the company’s legacy product, MOJO Pro, built with Angular. Delivered fixes to improve stability and functionality, enhancing user experience and reducing technical debt.`,
+      `Contributed to the development of the Easy Apply feature, simplifying the job application process for end users.`,
+    ],
+    technologies: ["Angular", "SCSS", "Angular Material", "React JS", "Javascript", "Typescript"],
+  },
+  {
+    year: "Sept 2023 - Nov 2024",
+    role: "Software Engineer",
     company: "Abacus Desk IT Solutions",
     description: [
       `Spearheaded the development and maintenance of CRM tools over 20 projects using Angular, demonstrating proficiency in frontend development and enabling effective client relationship management`,
