@@ -9,7 +9,7 @@ export const EXPERIENCES = [
     role: "Software Engineer Intern",
     company: "Joveo",
     description: [
-      `Collabo with the platform team to design and implement an admin tool in React, enabling the internal team to efficiently assign permissions out of 688 available options, streamlining administrative tasks and improving workflow.`,
+      `Collaborated with the platform team to design and implement an admin tool in React, enabling the internal team to efficiently assign permissions out of 688 available options, streamlining administrative tasks and improving workflow.`,
       `Resolved more than 30 issues in the company’s legacy product, MOJO Pro, built with Angular. Delivered fixes to improve stability and functionality, enhancing user experience and reducing technical debt.`,
       `Contributed to the development of the Easy Apply feature, simplifying the job application process for end users.`,
     ],
